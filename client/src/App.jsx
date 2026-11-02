@@ -47,6 +47,7 @@ export function AppContent() {
           <Route path="/impact" element={<ImpactPage />} />
           <Route path="/ai-scanner" element={<AIClassifierPage />} />
           <Route path="/corridors" element={<LocationMatchingPage />} />
+          <Route path="/map" element={<LocationMatchingPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
 

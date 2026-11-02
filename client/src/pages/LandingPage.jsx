@@ -14,7 +14,9 @@ import {
   Building2,
   ArrowDown,
   Layers,
-  ChevronRight
+  ChevronRight,
+  MapPin,
+  Truck
 } from 'lucide-react';
 import { listingAPI, impactAPI } from '../services/api';
 import { StatusBadge } from '../components/StatusBadge';
@@ -98,11 +100,11 @@ export const LandingPage = () => {
             </Link>
 
             <Link
-              to="/matching"
-              className="px-6 py-4 rounded-xl bg-white/5 hover:bg-white/10 text-brand-300 font-semibold text-sm border border-brand-500/20 transition-all flex items-center gap-2"
+              to="/corridors"
+              className="px-6 py-4 rounded-xl bg-blue-600/20 hover:bg-blue-600/30 text-blue-300 font-semibold text-sm border border-blue-400/30 hover:border-blue-400/50 transition-all flex items-center gap-2 shadow-sm"
             >
-              <Sparkles className="w-4 h-4 text-brand-400" />
-              <span>Test Matching Engine</span>
+              <MapPin className="w-4 h-4 text-rose-400" />
+              <span>Waste Logistics Map</span>
             </Link>
           </div>
         </div>

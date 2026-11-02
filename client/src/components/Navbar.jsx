@@ -128,11 +128,13 @@ export const Navbar = () => {
               <Link
                 to="/corridors"
                 className={`px-3 py-2 rounded-lg transition-colors flex items-center gap-1.5 ${
-                  isActive('/corridors') ? 'bg-brand-50 text-brand-700 font-bold' : 'hover:bg-slate-100 hover:text-slate-900'
+                  isActive('/corridors') || isActive('/map')
+                    ? 'bg-brand-50 text-brand-700 font-bold'
+                    : 'hover:bg-slate-100 hover:text-slate-900'
                 }`}
               >
                 <MapPin className="w-3.5 h-3.5 text-rose-500" />
-                <span>Logistics</span>
+                <span>Logistics Map</span>
               </Link>
 
               <Link
@@ -308,7 +310,7 @@ export const Navbar = () => {
             onClick={() => setMobileMenuOpen(false)}
             className="block py-2 text-slate-700 hover:text-brand-700"
           >
-            Logistics & Industrial Corridors
+            Waste Logistics Map (Google Maps)
           </Link>
           <Link
             to="/impact"

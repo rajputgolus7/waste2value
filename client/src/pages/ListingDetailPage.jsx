@@ -204,7 +204,7 @@ export const ListingDetailPage = () => {
 
           {/* SMART MATCHING SECTION: Potential Buyers For This Material */}
           <div className="bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-8 space-y-5 shadow-sm">
-            <div className="flex items-center justify-between">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
               <div>
                 <span className="text-[10px] font-bold uppercase tracking-wider text-amber-600 bg-amber-50 px-2.5 py-1 rounded-md border border-amber-200">
                   REAL-TIME ALGORITHM RESULTS
@@ -217,6 +217,13 @@ export const ListingDetailPage = () => {
                   Calculated using 6-factor compatibility (feedstock specifications, volume window, transit logistics, and budget).
                 </p>
               </div>
+              <Link
+                to="/corridors"
+                className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-blue-50 hover:bg-blue-100 text-blue-700 text-xs font-bold border border-blue-200 transition-colors shadow-2xs w-fit"
+              >
+                <MapPin className="w-3.5 h-3.5 text-rose-500" />
+                <span>View Logistics Map</span>
+              </Link>
             </div>
 
             <div className="space-y-4 pt-2">

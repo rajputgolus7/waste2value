@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import {
   Sparkles,
   Building2,
@@ -141,7 +141,7 @@ export const MatchingEnginePage = () => {
 
       {/* Main Algorithm Scoring Results */}
       <div className="space-y-6">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <div>
             <span className="text-xs font-bold text-brand-700 uppercase tracking-wider">
               SUITABLE BUYER MATCHES ({matches.length})
@@ -150,6 +150,13 @@ export const MatchingEnginePage = () => {
               Ranked by Algorithm Compatibility Score
             </h2>
           </div>
+          <Link
+            to="/corridors"
+            className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-blue-50 hover:bg-blue-100 text-blue-700 text-xs font-bold border border-blue-200 transition-colors shadow-2xs w-fit"
+          >
+            <MapPin className="w-3.5 h-3.5 text-rose-500" />
+            <span>Open in Waste Logistics Map</span>
+          </Link>
         </div>
 
         {loading ? (

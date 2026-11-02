@@ -12,7 +12,8 @@ import {
   Building2,
   PackageCheck,
   Clock,
-  ArrowRight
+  ArrowRight,
+  MapPin
 } from 'lucide-react';
 import {
   PieChart, Pie, Cell,
@@ -83,6 +84,14 @@ export const DashboardPage = () => {
         </div>
 
         <div className="flex items-center gap-2.5">
+          <Link
+            to="/corridors"
+            className="hidden sm:inline-flex px-3.5 py-2.5 bg-blue-50 hover:bg-blue-100 text-blue-700 border border-blue-200 rounded-xl text-xs font-bold shadow-2xs items-center gap-1.5 transition-all"
+          >
+            <MapPin className="w-3.5 h-3.5 text-rose-500" />
+            <span>Waste Logistics Map</span>
+          </Link>
+
           <button
             onClick={loadDashboard}
             className="p-2.5 bg-white border border-slate-200 text-slate-700 rounded-xl hover:bg-slate-50 text-xs font-semibold flex items-center gap-1.5 shadow-2xs"
