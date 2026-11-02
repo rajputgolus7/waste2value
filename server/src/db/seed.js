@@ -429,7 +429,7 @@ function seedDatabase() {
       city: 'Ludhiana',
       quality_grade: 'Grade A',
       availability_date: '2026-11-05',
-      image_url: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=800&q=80',
+      image_url: '/images/materials/rice_husk.svg',
       expected_use: 'Biomass power generation, bio-pelletizing, boiler fuel, silica extraction',
       status: 'ACTIVE'
     },
@@ -446,7 +446,7 @@ function seedDatabase() {
       city: 'Manesar',
       quality_grade: 'Grade A',
       availability_date: '2026-11-04',
-      image_url: 'https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&w=800&q=80',
+      image_url: '/images/materials/pet_plastic.svg',
       expected_use: 'rPET yarn spinning, polyester staple fiber, thermoform blister sheet',
       status: 'ACTIVE'
     },
@@ -463,7 +463,7 @@ function seedDatabase() {
       city: 'Okhla',
       quality_grade: 'Grade A',
       availability_date: '2026-11-03',
-      image_url: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80',
+      image_url: '/images/materials/cardboard_occ.svg',
       expected_use: 'Kraft paper pulping, testliner manufacturing, molded fiber packaging',
       status: 'ACTIVE'
     },
@@ -480,7 +480,7 @@ function seedDatabase() {
       city: 'Bathinda',
       quality_grade: 'Grade A',
       availability_date: '2026-11-08',
-      image_url: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=800&q=80',
+      image_url: '/images/materials/fly_ash.svg',
       expected_use: 'PPC cement blending, ready-mix concrete, AAC lightweight blocks, pavement sub-base',
       status: 'ACTIVE'
     },
@@ -497,7 +497,7 @@ function seedDatabase() {
       city: 'Panipat',
       quality_grade: 'Grade A',
       availability_date: '2026-11-06',
-      image_url: 'https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&fit=crop&w=800&q=80',
+      image_url: '/images/materials/cotton_yarn.svg',
       expected_use: 'Rotor open-end spinning (Ne 6s to 12s), surgical absorbent cotton, banknote paper',
       status: 'ACTIVE'
     },
@@ -514,7 +514,7 @@ function seedDatabase() {
       city: 'Bhiwadi',
       quality_grade: 'Industrial Reusable',
       availability_date: '2026-11-04',
-      image_url: 'https://images.unsplash.com/photo-1618090584176-7132b9911661?auto=format&fit=crop&w=800&q=80',
+      image_url: '/images/materials/hydraulic_oil.svg',
       expected_use: 'Lube oil re-refining into base oil, furnace burner fuel blending, chain lubricant',
       status: 'ACTIVE'
     },
@@ -531,7 +531,7 @@ function seedDatabase() {
       city: 'Muzaffarnagar',
       quality_grade: 'Grade B',
       availability_date: '2026-11-10',
-      image_url: 'https://images.unsplash.com/photo-1595974482597-4b8da8879bc5?auto=format&fit=crop&w=800&q=80',
+      image_url: '/images/materials/sugarcane_bagasse.svg',
       expected_use: 'Co-generation thermal boilers, particle board manufacturing, eco tableware molding',
       status: 'ACTIVE'
     },
@@ -548,7 +548,7 @@ function seedDatabase() {
       city: 'Pune',
       quality_grade: 'Industrial Reusable',
       availability_date: '2026-11-07',
-      image_url: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
+      image_url: '/images/materials/foundry_sand.svg',
       expected_use: 'Asphalt paving aggregate, cement kiln silica source, fly ash brick filler',
       status: 'ACTIVE'
     },
@@ -565,7 +565,7 @@ function seedDatabase() {
       city: 'Gurgaon',
       quality_grade: 'Grade A',
       availability_date: '2026-11-05',
-      image_url: 'https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80',
+      image_url: '/images/materials/aluminium_scrap.svg',
       expected_use: 'Aluminium ingot re-melting, secondary alloying, die-casting billets',
       status: 'ACTIVE'
     },
@@ -582,7 +582,7 @@ function seedDatabase() {
       city: 'Panipat',
       quality_grade: 'Grade B',
       availability_date: '2026-11-09',
-      image_url: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80',
+      image_url: '/images/materials/denim_clips.svg',
       expected_use: 'Recycled denim yarn, thermal and acoustic insulation batts, handmade artisan paper',
       status: 'ACTIVE'
     },
@@ -599,7 +599,7 @@ function seedDatabase() {
       city: 'Baddi',
       quality_grade: 'Grade A',
       availability_date: '2026-11-12',
-      image_url: 'https://images.unsplash.com/photo-1605600659908-0ef719419d41?auto=format&fit=crop&w=800&q=80',
+      image_url: '/images/materials/hdpe_plastic.svg',
       expected_use: 'Corrugated drainage pipe extrusion, road barricades, pallet molding',
       status: 'ACTIVE'
     },
@@ -616,7 +616,7 @@ function seedDatabase() {
       city: 'Dahej',
       quality_grade: 'Industrial Reusable',
       availability_date: '2026-11-15',
-      image_url: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=800&q=80',
+      image_url: '/images/materials/hydrochloric_acid.svg',
       expected_use: 'Ferric chloride coagulant manufacturing, ETP pH neutralization, oil well acidizing',
       status: 'ACTIVE'
     },
@@ -633,7 +633,7 @@ function seedDatabase() {
       city: 'Jaipur',
       quality_grade: 'Grade A',
       availability_date: '2026-11-11',
-      image_url: 'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=800&q=80',
+      image_url: '/images/materials/paper_cores.svg',
       expected_use: 'Re-use as winding cores, high yield packaging pulp, edge protectors',
       status: 'ACTIVE'
     },
@@ -650,7 +650,7 @@ function seedDatabase() {
       city: 'Alwar',
       quality_grade: 'Grade B',
       availability_date: '2026-11-04',
-      image_url: 'https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=800&q=80',
+      image_url: '/images/materials/spent_barley.svg',
       expected_use: 'Cattle feed compounding, mushroom cultivation substrate, biogas feedstock',
       status: 'ACTIVE'
     },
@@ -667,7 +667,7 @@ function seedDatabase() {
       city: 'Yamunanagar',
       quality_grade: 'Grade A',
       availability_date: '2026-11-07',
-      image_url: 'https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80',
+      image_url: '/images/materials/wood_sawdust.svg',
       expected_use: 'Biomass white wood pellets, agarbatti powder, wood plastic composite (WPC)',
       status: 'ACTIVE'
     },
@@ -684,7 +684,7 @@ function seedDatabase() {
       city: 'Pune',
       quality_grade: 'Grade A',
       availability_date: '2026-11-18',
-      image_url: 'https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=800&q=80',
+      image_url: '/images/materials/blast_furnace_slag.svg',
       expected_use: 'GGBS cement production, marine concrete durability enhancer, soil stabilization',
       status: 'ACTIVE'
     },
@@ -701,7 +701,7 @@ function seedDatabase() {
       city: 'Meerut',
       quality_grade: 'Grade A',
       availability_date: '2026-11-14',
-      image_url: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80',
+      image_url: '/images/materials/glass_cullet.svg',
       expected_use: 'Container glass melting, glass wool insulation, reflective road marking beads',
       status: 'ACTIVE'
     },
@@ -718,7 +718,7 @@ function seedDatabase() {
       city: 'Bathinda',
       quality_grade: 'Grade B',
       availability_date: '2026-11-16',
-      image_url: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80',
+      image_url: '/images/materials/cotton_linters.svg',
       expected_use: 'Cellulose acetate, nitrocellulose, security bond paper, viscous rayon',
       status: 'ACTIVE'
     },
@@ -735,7 +735,7 @@ function seedDatabase() {
       city: 'Dahej',
       quality_grade: 'Industrial Reusable',
       availability_date: '2026-11-20',
-      image_url: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
+      image_url: '/images/materials/phosphogypsum.svg',
       expected_use: 'Cement retarder additive, plasterboard (drywall) core, sodic soil reclamation',
       status: 'ACTIVE'
     },
@@ -752,7 +752,7 @@ function seedDatabase() {
       city: 'Delhi',
       quality_grade: 'Grade A',
       availability_date: '2026-11-12',
-      image_url: 'https://images.unsplash.com/photo-1578844251758-2f71da64c96f?auto=format&fit=crop&w=800&q=80',
+      image_url: '/images/materials/rubber_crumb.svg',
       expected_use: 'Crumb Rubber Modified Bitumen (CRMB) road surfacing, athletic running tracks, molded playground tiles',
       status: 'ACTIVE'
     },
@@ -769,7 +769,7 @@ function seedDatabase() {
       city: 'Bhiwadi',
       quality_grade: 'Grade A',
       availability_date: '2026-11-10',
-      image_url: 'https://images.unsplash.com/photo-1516216628859-9bcceabb84ca?auto=format&fit=crop&w=800&q=80',
+      image_url: '/images/materials/zinc_dross.svg',
       expected_use: 'Zinc oxide (French process) chemical production, zinc sulphate fertilizer, secondary zinc smelting',
       status: 'ACTIVE'
     },
@@ -786,7 +786,7 @@ function seedDatabase() {
       city: 'Noida',
       quality_grade: 'Industrial Reusable',
       availability_date: '2026-11-05',
-      image_url: 'https://images.unsplash.com/photo-1590069261209-f8e9b8642343?auto=format&fit=crop&w=800&q=80',
+      image_url: '/images/materials/construction_aggregate.svg',
       expected_use: 'Sub-base road construction, drainage bedding, interlocking permeable pavers',
       status: 'ACTIVE'
     }

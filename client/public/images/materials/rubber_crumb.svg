@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#09090b" />
+      <stop offset="50%" stopColor="#18181b" />
+      <stop offset="100%" stopColor="#000000" />
+    </linearGradient>
+    <linearGradient id="gradMetallic" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#f1f5f9" />
+      <stop offset="50%" stopColor="#94a3b8" />
+      <stop offset="100%" stopColor="#475569" />
+    </linearGradient>
+    <linearGradient id="gradGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#fef08a" />
+      <stop offset="50%" stopColor="#ca8a04" />
+      <stop offset="100%" stopColor="#854d0e" />
+    </linearGradient>
+    <linearGradient id="gradAmber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#fde68a" />
+      <stop offset="50%" stopColor="#d97706" />
+      <stop offset="100%" stopColor="#78350f" />
+    </linearGradient>
+    <linearGradient id="gradBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#60a5fa" />
+      <stop offset="50%" stopColor="#2563eb" />
+      <stop offset="100%" stopColor="#1e3a8a" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.35" />
+    </filter>
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="500" fill="url(#bg)" />
+
+  <!-- Industrial Mesh / Grid Pattern -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+    <line x1="160" y1="0" x2="160" y2="500" />
+    <line x1="320" y1="0" x2="320" y2="500" />
+    <line x1="480" y1="0" x2="480" y2="500" />
+    <line x1="640" y1="0" x2="640" y2="500" />
+  </g>
+
+  <!-- Material Illustration Artwork -->
+  <g filter="url(#shadow)">
+    
+    <!-- Granulated Deep Black Tire Crumb Granules -->
+    <ellipse cx="400" cy="250" rx="260" ry="80" fill="#27272a" />
+    <g fill="#09090b" stroke="#52525b" stroke-width="0.8">
+      <circle cx="200" cy="200" r="2.5" />
+<circle cx="221" cy="211" r="3.5" />
+<circle cx="242" cy="222" r="4.5" />
+<circle cx="263" cy="233" r="5.5" />
+<circle cx="284" cy="244" r="2.5" />
+<circle cx="305" cy="255" r="3.5" />
+<circle cx="326" cy="266" r="4.5" />
+<circle cx="347" cy="277" r="5.5" />
+<circle cx="368" cy="288" r="2.5" />
+<circle cx="389" cy="209" r="3.5" />
+<circle cx="410" cy="220" r="4.5" />
+<circle cx="431" cy="231" r="5.5" />
+<circle cx="452" cy="242" r="2.5" />
+<circle cx="473" cy="253" r="3.5" />
+<circle cx="494" cy="264" r="4.5" />
+<circle cx="515" cy="275" r="5.5" />
+<circle cx="536" cy="286" r="2.5" />
+<circle cx="557" cy="207" r="3.5" />
+<circle cx="578" cy="218" r="4.5" />
+<circle cx="599" cy="229" r="5.5" />
+<circle cx="220" cy="240" r="2.5" />
+<circle cx="241" cy="251" r="3.5" />
+<circle cx="262" cy="262" r="4.5" />
+<circle cx="283" cy="273" r="5.5" />
+<circle cx="304" cy="284" r="2.5" />
+<circle cx="325" cy="205" r="3.5" />
+<circle cx="346" cy="216" r="4.5" />
+<circle cx="367" cy="227" r="5.5" />
+<circle cx="388" cy="238" r="2.5" />
+<circle cx="409" cy="249" r="3.5" />
+<circle cx="430" cy="260" r="4.5" />
+<circle cx="451" cy="271" r="5.5" />
+<circle cx="472" cy="282" r="2.5" />
+<circle cx="493" cy="203" r="3.5" />
+<circle cx="514" cy="214" r="4.5" />
+<circle cx="535" cy="225" r="5.5" />
+<circle cx="556" cy="236" r="2.5" />
+<circle cx="577" cy="247" r="3.5" />
+<circle cx="598" cy="258" r="4.5" />
+<circle cx="219" cy="269" r="5.5" />
+<circle cx="240" cy="280" r="2.5" />
+<circle cx="261" cy="201" r="3.5" />
+<circle cx="282" cy="212" r="4.5" />
+<circle cx="303" cy="223" r="5.5" />
+<circle cx="324" cy="234" r="2.5" />
+<circle cx="345" cy="245" r="3.5" />
+<circle cx="366" cy="256" r="4.5" />
+<circle cx="387" cy="267" r="5.5" />
+<circle cx="408" cy="278" r="2.5" />
+<circle cx="429" cy="289" r="3.5" />
+<circle cx="450" cy="210" r="4.5" />
+<circle cx="471" cy="221" r="5.5" />
+<circle cx="492" cy="232" r="2.5" />
+<circle cx="513" cy="243" r="3.5" />
+<circle cx="534" cy="254" r="4.5" />
+<circle cx="555" cy="265" r="5.5" />
+<circle cx="576" cy="276" r="2.5" />
+<circle cx="597" cy="287" r="3.5" />
+<circle cx="218" cy="208" r="4.5" />
+<circle cx="239" cy="219" r="5.5" />
+<circle cx="260" cy="230" r="2.5" />
+<circle cx="281" cy="241" r="3.5" />
+<circle cx="302" cy="252" r="4.5" />
+<circle cx="323" cy="263" r="5.5" />
+<circle cx="344" cy="274" r="2.5" />
+<circle cx="365" cy="285" r="3.5" />
+<circle cx="386" cy="206" r="4.5" />
+<circle cx="407" cy="217" r="5.5" />
+<circle cx="428" cy="228" r="2.5" />
+<circle cx="449" cy="239" r="3.5" />
+<circle cx="470" cy="250" r="4.5" />
+<circle cx="491" cy="261" r="5.5" />
+<circle cx="512" cy="272" r="2.5" />
+<circle cx="533" cy="283" r="3.5" />
+<circle cx="554" cy="204" r="4.5" />
+<circle cx="575" cy="215" r="5.5" />
+<circle cx="596" cy="226" r="2.5" />
+<circle cx="217" cy="237" r="3.5" />
+<circle cx="238" cy="248" r="4.5" />
+<circle cx="259" cy="259" r="5.5" />
+    </g>
+    <!-- Commercial Tire Silhouette in Background -->
+    <circle cx="400" cy="200" r="80" fill="none" stroke="#3f3f46" stroke-width="24" stroke-dasharray="16,8" />
+  
+  </g>
+
+  <!-- Top Dark Gradient Overlay for Badges -->
+  <rect width="800" height="120" fill="url(#bg)" opacity="0.65" />
+  <rect width="800" height="500" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.1" />
+
+  <!-- Material Category Badge -->
+  <g transform="translate(40, 36)">
+    <rect width="210" height="34" rx="17" fill="#0f172a" opacity="0.85" />
+    <circle cx="17" cy="17" r="6" fill="#71717a" />
+    <text x="32" y="22" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="800" fill="#ffffff" letter-spacing="1.2">
+      PLASTICS & POLYMERS SCRAP
+    </text>
+  </g>
+
+  <!-- Bottom Material Title Plate -->
+  <g transform="translate(0, 380)">
+    <rect width="800" height="120" fill="#090d16" opacity="0.9" />
+    <line x1="0" y1="0" x2="800" y2="0" stroke="#71717a" stroke-width="3" opacity="0.8" />
+    <text x="40" y="44" font-family="'Space Grotesk', system-ui, sans-serif" font-size="22" font-weight="700" fill="#ffffff" letter-spacing="0.5">
+      End-of-Life Vulcanized Rubber Tire Crumb (30 Mesh)
+    </text>
+    <text x="40" y="76" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="13" font-weight="500" fill="#94a3b8">
+      Steel cord wire and nylon fluffs removed • Ambient mechanical crumb • CRMB road grade
+    </text>
+    <!-- Verified Material Spec Stamp -->
+    <g transform="translate(620, 24)">
+      <rect width="140" height="36" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+      <text x="70" y="23" font-family="'Space Grotesk', system-ui, sans-serif" font-size="11" font-weight="700" fill="#38bdf8" text-anchor="middle" letter-spacing="1">
+        VERIFIED FEEDSTOCK
+      </text>
+    </g>
+  </g>
+</svg>

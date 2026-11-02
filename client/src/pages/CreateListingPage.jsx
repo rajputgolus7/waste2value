@@ -18,14 +18,14 @@ import { useAuth } from '../context/AuthContext';
 import { StatusBadge } from '../components/StatusBadge';
 
 const SAMPLE_IMAGES = [
-  { name: 'Rice Husk Bales', url: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=800&q=80' },
-  { name: 'PET Plastic Scraps', url: 'https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&w=800&q=80' },
-  { name: 'Fly Ash Powder', url: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=800&q=80' },
-  { name: 'Cotton Yarn & Textile Waste', url: 'https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&fit=crop&w=800&q=80' },
-  { name: 'Hydraulic Lube Oil Drums', url: 'https://images.unsplash.com/photo-1618090584176-7132b9911661?auto=format&fit=crop&w=800&q=80' },
-  { name: 'Metal Scrap & Swarf', url: 'https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80' },
-  { name: 'Sugarcane Bagasse Bales', url: 'https://images.unsplash.com/photo-1595974482597-4b8da8879bc5?auto=format&fit=crop&w=800&q=80' },
-  { name: 'Corrugated Cardboard OCC', url: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80' }
+  { name: 'Rice Husk Bales', url: '/images/materials/rice_husk.svg' },
+  { name: 'PET Plastic Scraps', url: '/images/materials/pet_plastic.svg' },
+  { name: 'Fly Ash Powder', url: '/images/materials/fly_ash.svg' },
+  { name: 'Cotton Yarn & Textile Waste', url: '/images/materials/cotton_yarn.svg' },
+  { name: 'Hydraulic Lube Oil Drums', url: '/images/materials/hydraulic_oil.svg' },
+  { name: 'Metal Scrap & Swarf', url: '/images/materials/steel_scrap.svg' },
+  { name: 'Sugarcane Bagasse Bales', url: '/images/materials/sugarcane_bagasse.svg' },
+  { name: 'Corrugated Cardboard OCC', url: '/images/materials/cardboard_occ.svg' }
 ];
 
 export const CreateListingPage = () => {

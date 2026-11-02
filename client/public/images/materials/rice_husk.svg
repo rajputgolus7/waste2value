@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#291e0a" />
+      <stop offset="50%" stopColor="#453311" />
+      <stop offset="100%" stopColor="#1f1607" />
+    </linearGradient>
+    <linearGradient id="gradMetallic" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#f1f5f9" />
+      <stop offset="50%" stopColor="#94a3b8" />
+      <stop offset="100%" stopColor="#475569" />
+    </linearGradient>
+    <linearGradient id="gradGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#fef08a" />
+      <stop offset="50%" stopColor="#ca8a04" />
+      <stop offset="100%" stopColor="#854d0e" />
+    </linearGradient>
+    <linearGradient id="gradAmber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#fde68a" />
+      <stop offset="50%" stopColor="#d97706" />
+      <stop offset="100%" stopColor="#78350f" />
+    </linearGradient>
+    <linearGradient id="gradBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#60a5fa" />
+      <stop offset="50%" stopColor="#2563eb" />
+      <stop offset="100%" stopColor="#1e3a8a" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.35" />
+    </filter>
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="500" fill="url(#bg)" />
+
+  <!-- Industrial Mesh / Grid Pattern -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+    <line x1="160" y1="0" x2="160" y2="500" />
+    <line x1="320" y1="0" x2="320" y2="500" />
+    <line x1="480" y1="0" x2="480" y2="500" />
+    <line x1="640" y1="0" x2="640" y2="500" />
+  </g>
+
+  <!-- Material Illustration Artwork -->
+  <g filter="url(#shadow)">
+    
+    <!-- Pile of Golden Rice Husks -->
+    <ellipse cx="400" cy="270" rx="280" ry="110" fill="#d97706" opacity="0.5" />
+    <ellipse cx="400" cy="250" rx="240" ry="90" fill="#f59e0b" opacity="0.7" />
+    <ellipse cx="400" cy="230" rx="200" ry="70" fill="#fbbf24" opacity="0.9" />
+    <!-- Individual Rice Husk Grain Particles & Textures -->
+    <g fill="#fef08a" opacity="0.9">
+      <path d="M 240 180 Q 252 174 264 180 Q 252 186 240 180 Z" transform="rotate(0 252 180)" />
+<path d="M 275 197 Q 287 191 299 197 Q 287 203 275 197 Z" transform="rotate(37 287 197)" />
+<path d="M 310 214 Q 322 208 334 214 Q 322 220 310 214 Z" transform="rotate(74 322 214)" />
+<path d="M 345 231 Q 357 225 369 231 Q 357 237 345 231 Z" transform="rotate(111 357 231)" />
+<path d="M 380 248 Q 392 242 404 248 Q 392 254 380 248 Z" transform="rotate(148 392 248)" />
+<path d="M 375 265 Q 387 259 399 265 Q 387 271 375 265 Z" transform="rotate(5 387 265)" />
+<path d="M 410 282 Q 422 276 434 282 Q 422 288 410 282 Z" transform="rotate(42 422 282)" />
+<path d="M 445 189 Q 457 183 469 189 Q 457 195 445 189 Z" transform="rotate(79 457 189)" />
+<path d="M 480 206 Q 492 200 504 206 Q 492 212 480 206 Z" transform="rotate(116 492 206)" />
+<path d="M 515 223 Q 527 217 539 223 Q 527 229 515 223 Z" transform="rotate(153 527 223)" />
+<path d="M 510 240 Q 522 234 534 240 Q 522 246 510 240 Z" transform="rotate(10 522 240)" />
+<path d="M 545 257 Q 557 251 569 257 Q 557 263 545 257 Z" transform="rotate(47 557 257)" />
+<path d="M 260 274 Q 272 268 284 274 Q 272 280 260 274 Z" transform="rotate(84 272 274)" />
+<path d="M 295 181 Q 307 175 319 181 Q 307 187 295 181 Z" transform="rotate(121 307 181)" />
+<path d="M 330 198 Q 342 192 354 198 Q 342 204 330 198 Z" transform="rotate(158 342 198)" />
+<path d="M 325 215 Q 337 209 349 215 Q 337 221 325 215 Z" transform="rotate(15 337 215)" />
+<path d="M 360 232 Q 372 226 384 232 Q 372 238 360 232 Z" transform="rotate(52 372 232)" />
+<path d="M 395 249 Q 407 243 419 249 Q 407 255 395 249 Z" transform="rotate(89 407 249)" />
+<path d="M 430 266 Q 442 260 454 266 Q 442 272 430 266 Z" transform="rotate(126 442 266)" />
+<path d="M 465 283 Q 477 277 489 283 Q 477 289 465 283 Z" transform="rotate(163 477 283)" />
+<path d="M 460 190 Q 472 184 484 190 Q 472 196 460 190 Z" transform="rotate(20 472 190)" />
+<path d="M 495 207 Q 507 201 519 207 Q 507 213 495 207 Z" transform="rotate(57 507 207)" />
+<path d="M 530 224 Q 542 218 554 224 Q 542 230 530 224 Z" transform="rotate(94 542 224)" />
+<path d="M 565 241 Q 577 235 589 241 Q 577 247 565 241 Z" transform="rotate(131 577 241)" />
+<path d="M 280 258 Q 292 252 304 258 Q 292 264 280 258 Z" transform="rotate(168 292 258)" />
+<path d="M 275 275 Q 287 269 299 275 Q 287 281 275 275 Z" transform="rotate(25 287 275)" />
+<path d="M 310 182 Q 322 176 334 182 Q 322 188 310 182 Z" transform="rotate(62 322 182)" />
+<path d="M 345 199 Q 357 193 369 199 Q 357 205 345 199 Z" transform="rotate(99 357 199)" />
+<path d="M 380 216 Q 392 210 404 216 Q 392 222 380 216 Z" transform="rotate(136 392 216)" />
+<path d="M 415 233 Q 427 227 439 233 Q 427 239 415 233 Z" transform="rotate(173 427 233)" />
+<path d="M 410 250 Q 422 244 434 250 Q 422 256 410 250 Z" transform="rotate(30 422 250)" />
+<path d="M 445 267 Q 457 261 469 267 Q 457 273 445 267 Z" transform="rotate(67 457 267)" />
+<path d="M 480 284 Q 492 278 504 284 Q 492 290 480 284 Z" transform="rotate(104 492 284)" />
+<path d="M 515 191 Q 527 185 539 191 Q 527 197 515 191 Z" transform="rotate(141 527 191)" />
+<path d="M 550 208 Q 562 202 574 208 Q 562 214 550 208 Z" transform="rotate(178 562 208)" />
+<path d="M 545 225 Q 557 219 569 225 Q 557 231 545 225 Z" transform="rotate(35 557 225)" />
+<path d="M 260 242 Q 272 236 284 242 Q 272 248 260 242 Z" transform="rotate(72 272 242)" />
+<path d="M 295 259 Q 307 253 319 259 Q 307 265 295 259 Z" transform="rotate(109 307 259)" />
+<path d="M 330 276 Q 342 270 354 276 Q 342 282 330 276 Z" transform="rotate(146 342 276)" />
+<path d="M 365 183 Q 377 177 389 183 Q 377 189 365 183 Z" transform="rotate(3 377 183)" />
+<path d="M 360 200 Q 372 194 384 200 Q 372 206 360 200 Z" transform="rotate(40 372 200)" />
+<path d="M 395 217 Q 407 211 419 217 Q 407 223 395 217 Z" transform="rotate(77 407 217)" />
+<path d="M 430 234 Q 442 228 454 234 Q 442 240 430 234 Z" transform="rotate(114 442 234)" />
+<path d="M 465 251 Q 477 245 489 251 Q 477 257 465 251 Z" transform="rotate(151 477 251)" />
+<path d="M 500 268 Q 512 262 524 268 Q 512 274 500 268 Z" transform="rotate(8 512 268)" />
+    </g>
+    <!-- Agro Husk Sack & Plant Details -->
+    <path d="M 160 140 L 220 300 L 140 310 Z" fill="#78350f" opacity="0.4" />
+    <circle cx="400" cy="220" r="45" fill="#fef08a" opacity="0.15" filter="url(#subtleGlow)" />
+  
+  </g>
+
+  <!-- Top Dark Gradient Overlay for Badges -->
+  <rect width="800" height="120" fill="url(#bg)" opacity="0.65" />
+  <rect width="800" height="500" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.1" />
+
+  <!-- Material Category Badge -->
+  <g transform="translate(40, 36)">
+    <rect width="210" height="34" rx="17" fill="#0f172a" opacity="0.85" />
+    <circle cx="17" cy="17" r="6" fill="#eab308" />
+    <text x="32" y="22" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="800" fill="#ffffff" letter-spacing="1.2">
+      BIOMASS & AGRO FEEDSTOCK
+    </text>
+  </g>
+
+  <!-- Bottom Material Title Plate -->
+  <g transform="translate(0, 380)">
+    <rect width="800" height="120" fill="#090d16" opacity="0.9" />
+    <line x1="0" y1="0" x2="800" y2="0" stroke="#eab308" stroke-width="3" opacity="0.8" />
+    <text x="40" y="44" font-family="'Space Grotesk', system-ui, sans-serif" font-size="22" font-weight="700" fill="#ffffff" letter-spacing="0.5">
+      Paddy Rice Husk (Agro By-Product)
+    </text>
+    <text x="40" y="76" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="13" font-weight="500" fill="#94a3b8">
+      Clean golden parboiled husk • Calorific 3,400 kcal/kg • Low moisture
+    </text>
+    <!-- Verified Material Spec Stamp -->
+    <g transform="translate(620, 24)">
+      <rect width="140" height="36" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+      <text x="70" y="23" font-family="'Space Grotesk', system-ui, sans-serif" font-size="11" font-weight="700" fill="#38bdf8" text-anchor="middle" letter-spacing="1">
+        VERIFIED FEEDSTOCK
+      </text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#1e293b" />
+      <stop offset="50%" stopColor="#334155" />
+      <stop offset="100%" stopColor="#0f172a" />
+    </linearGradient>
+    <linearGradient id="gradMetallic" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#f1f5f9" />
+      <stop offset="50%" stopColor="#94a3b8" />
+      <stop offset="100%" stopColor="#475569" />
+    </linearGradient>
+    <linearGradient id="gradGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#fef08a" />
+      <stop offset="50%" stopColor="#ca8a04" />
+      <stop offset="100%" stopColor="#854d0e" />
+    </linearGradient>
+    <linearGradient id="gradAmber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#fde68a" />
+      <stop offset="50%" stopColor="#d97706" />
+      <stop offset="100%" stopColor="#78350f" />
+    </linearGradient>
+    <linearGradient id="gradBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#60a5fa" />
+      <stop offset="50%" stopColor="#2563eb" />
+      <stop offset="100%" stopColor="#1e3a8a" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.35" />
+    </filter>
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="500" fill="url(#bg)" />
+
+  <!-- Industrial Mesh / Grid Pattern -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+    <line x1="160" y1="0" x2="160" y2="500" />
+    <line x1="320" y1="0" x2="320" y2="500" />
+    <line x1="480" y1="0" x2="480" y2="500" />
+    <line x1="640" y1="0" x2="640" y2="500" />
+  </g>
+
+  <!-- Material Illustration Artwork -->
+  <g filter="url(#shadow)">
+    
+    <!-- Thermal Silo & Ash Mound -->
+    <!-- Industrial Tanker Silo -->
+    <rect x="220" y="120" width="80" height="150" rx="6" fill="#475569" stroke="#64748b" stroke-width="2" />
+    <path d="M 220 120 Q 260 90 300 120 Z" fill="#64748b" />
+    <rect x="240" y="270" width="40" height="30" fill="#334155" />
+
+    <!-- Huge Siliceous Fine Ash Mound -->
+    <ellipse cx="460" cy="280" rx="190" ry="70" fill="#64748b" />
+    <ellipse cx="460" cy="265" rx="160" ry="55" fill="#94a3b8" />
+    <ellipse cx="460" cy="250" rx="120" ry="40" fill="#cbd5e1" opacity="0.9" />
+
+    <!-- Fine Powder Cloud Effect -->
+    <circle cx="460" cy="220" r="60" fill="#e2e8f0" opacity="0.2" filter="url(#subtleGlow)" />
+    <text x="460" y="255" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="800" fill="#0f172a" text-anchor="middle">
+      CLASS F SILICEOUS
+    </text>
+  
+  </g>
+
+  <!-- Top Dark Gradient Overlay for Badges -->
+  <rect width="800" height="120" fill="url(#bg)" opacity="0.65" />
+  <rect width="800" height="500" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.1" />
+
+  <!-- Material Category Badge -->
+  <g transform="translate(40, 36)">
+    <rect width="210" height="34" rx="17" fill="#0f172a" opacity="0.85" />
+    <circle cx="17" cy="17" r="6" fill="#94a3b8" />
+    <text x="32" y="22" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="800" fill="#ffffff" letter-spacing="1.2">
+      FLY ASH & CONSTRUCTION WASTE
+    </text>
+  </g>
+
+  <!-- Bottom Material Title Plate -->
+  <g transform="translate(0, 380)">
+    <rect width="800" height="120" fill="#090d16" opacity="0.9" />
+    <line x1="0" y1="0" x2="800" y2="0" stroke="#94a3b8" stroke-width="3" opacity="0.8" />
+    <text x="40" y="44" font-family="'Space Grotesk', system-ui, sans-serif" font-size="22" font-weight="700" fill="#ffffff" letter-spacing="0.5">
+      Electrostatic Precipitator Dry Fly Ash (Class F)
+    </text>
+    <text x="40" y="76" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="13" font-weight="500" fill="#94a3b8">
+      Fineness 340 m²/kg • Reactive silica >55% • Conforming to IS:3812 Part 1
+    </text>
+    <!-- Verified Material Spec Stamp -->
+    <g transform="translate(620, 24)">
+      <rect width="140" height="36" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+      <text x="70" y="23" font-family="'Space Grotesk', system-ui, sans-serif" font-size="11" font-weight="700" fill="#38bdf8" text-anchor="middle" letter-spacing="1">
+        VERIFIED FEEDSTOCK
+      </text>
+    </g>
+  </g>
+</svg>

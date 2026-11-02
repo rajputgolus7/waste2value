@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#082f49" />
+      <stop offset="50%" stopColor="#0c4a6e" />
+      <stop offset="100%" stopColor="#031826" />
+    </linearGradient>
+    <linearGradient id="gradMetallic" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#f1f5f9" />
+      <stop offset="50%" stopColor="#94a3b8" />
+      <stop offset="100%" stopColor="#475569" />
+    </linearGradient>
+    <linearGradient id="gradGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#fef08a" />
+      <stop offset="50%" stopColor="#ca8a04" />
+      <stop offset="100%" stopColor="#854d0e" />
+    </linearGradient>
+    <linearGradient id="gradAmber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#fde68a" />
+      <stop offset="50%" stopColor="#d97706" />
+      <stop offset="100%" stopColor="#78350f" />
+    </linearGradient>
+    <linearGradient id="gradBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#60a5fa" />
+      <stop offset="50%" stopColor="#2563eb" />
+      <stop offset="100%" stopColor="#1e3a8a" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.35" />
+    </filter>
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="500" fill="url(#bg)" />
+
+  <!-- Industrial Mesh / Grid Pattern -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+    <line x1="160" y1="0" x2="160" y2="500" />
+    <line x1="320" y1="0" x2="320" y2="500" />
+    <line x1="480" y1="0" x2="480" y2="500" />
+    <line x1="640" y1="0" x2="640" y2="500" />
+  </g>
+
+  <!-- Material Illustration Artwork -->
+  <g filter="url(#shadow)">
+    
+    <!-- Crushed Clear Translucent Plastic Flakes -->
+    <g fill="#7dd3fc" opacity="0.65" stroke="#bae6fd" stroke-width="1.5">
+      <rect x="240" y="160" width="18" height="12" rx="2" transform="rotate(0 249 166)" />
+<rect x="269" y="179" width="22" height="21" rx="2" transform="rotate(47 280 189.5)" />
+<rect x="298" y="198" width="26" height="18" rx="2" transform="rotate(94 311 207)" />
+<rect x="327" y="217" width="30" height="15" rx="2" transform="rotate(141 342 224.5)" />
+<rect x="356" y="236" width="34" height="12" rx="2" transform="rotate(188 373 242)" />
+<rect x="385" y="255" width="18" height="21" rx="2" transform="rotate(235 394 265.5)" />
+<rect x="414" y="274" width="22" height="18" rx="2" transform="rotate(282 425 283)" />
+<rect x="443" y="173" width="26" height="15" rx="2" transform="rotate(329 456 180.5)" />
+<rect x="472" y="192" width="30" height="12" rx="2" transform="rotate(16 487 198)" />
+<rect x="501" y="211" width="34" height="21" rx="2" transform="rotate(63 518 221.5)" />
+<rect x="530" y="230" width="18" height="18" rx="2" transform="rotate(110 539 239)" />
+<rect x="559" y="249" width="22" height="15" rx="2" transform="rotate(157 570 256.5)" />
+<rect x="268" y="268" width="26" height="12" rx="2" transform="rotate(204 281 274)" />
+<rect x="297" y="167" width="30" height="21" rx="2" transform="rotate(251 312 177.5)" />
+<rect x="326" y="186" width="34" height="18" rx="2" transform="rotate(298 343 195)" />
+<rect x="355" y="205" width="18" height="15" rx="2" transform="rotate(345 364 212.5)" />
+<rect x="384" y="224" width="22" height="12" rx="2" transform="rotate(32 395 230)" />
+<rect x="413" y="243" width="26" height="21" rx="2" transform="rotate(79 426 253.5)" />
+<rect x="442" y="262" width="30" height="18" rx="2" transform="rotate(126 457 271)" />
+<rect x="471" y="161" width="34" height="15" rx="2" transform="rotate(173 488 168.5)" />
+<rect x="500" y="180" width="18" height="12" rx="2" transform="rotate(220 509 186)" />
+<rect x="529" y="199" width="22" height="21" rx="2" transform="rotate(267 540 209.5)" />
+<rect x="558" y="218" width="26" height="18" rx="2" transform="rotate(314 571 227)" />
+<rect x="267" y="237" width="30" height="15" rx="2" transform="rotate(1 282 244.5)" />
+<rect x="296" y="256" width="34" height="12" rx="2" transform="rotate(48 313 262)" />
+<rect x="325" y="275" width="18" height="21" rx="2" transform="rotate(95 334 285.5)" />
+<rect x="354" y="174" width="22" height="18" rx="2" transform="rotate(142 365 183)" />
+<rect x="383" y="193" width="26" height="15" rx="2" transform="rotate(189 396 200.5)" />
+<rect x="412" y="212" width="30" height="12" rx="2" transform="rotate(236 427 218)" />
+<rect x="441" y="231" width="34" height="21" rx="2" transform="rotate(283 458 241.5)" />
+<rect x="470" y="250" width="18" height="18" rx="2" transform="rotate(330 479 259)" />
+<rect x="499" y="269" width="22" height="15" rx="2" transform="rotate(17 510 276.5)" />
+<rect x="528" y="168" width="26" height="12" rx="2" transform="rotate(64 541 174)" />
+<rect x="557" y="187" width="30" height="21" rx="2" transform="rotate(111 572 197.5)" />
+<rect x="266" y="206" width="34" height="18" rx="2" transform="rotate(158 283 215)" />
+<rect x="295" y="225" width="18" height="15" rx="2" transform="rotate(205 304 232.5)" />
+<rect x="324" y="244" width="22" height="12" rx="2" transform="rotate(252 335 250)" />
+<rect x="353" y="263" width="26" height="21" rx="2" transform="rotate(299 366 273.5)" />
+<rect x="382" y="162" width="30" height="18" rx="2" transform="rotate(346 397 171)" />
+<rect x="411" y="181" width="34" height="15" rx="2" transform="rotate(33 428 188.5)" />
+    </g>
+    <!-- Resin Identification Code #1 Triangle -->
+    <g transform="translate(370, 180)">
+      <polygon points="30,0 60,50 0,50" fill="none" stroke="#38bdf8" stroke-width="5" />
+      <text x="30" y="42" font-family="'Space Grotesk', sans-serif" font-size="20" font-weight="900" fill="#38bdf8" text-anchor="middle">1</text>
+      <text x="30" y="68" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="800" fill="#7dd3fc" text-anchor="middle">rPET</text>
+    </g>
+  
+  </g>
+
+  <!-- Top Dark Gradient Overlay for Badges -->
+  <rect width="800" height="120" fill="url(#bg)" opacity="0.65" />
+  <rect width="800" height="500" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.1" />
+
+  <!-- Material Category Badge -->
+  <g transform="translate(40, 36)">
+    <rect width="210" height="34" rx="17" fill="#0f172a" opacity="0.85" />
+    <circle cx="17" cy="17" r="6" fill="#38bdf8" />
+    <text x="32" y="22" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="800" fill="#ffffff" letter-spacing="1.2">
+      PLASTICS & POLYMERS SCRAP
+    </text>
+  </g>
+
+  <!-- Bottom Material Title Plate -->
+  <g transform="translate(0, 380)">
+    <rect width="800" height="120" fill="#090d16" opacity="0.9" />
+    <line x1="0" y1="0" x2="800" y2="0" stroke="#38bdf8" stroke-width="3" opacity="0.8" />
+    <text x="40" y="44" font-family="'Space Grotesk', system-ui, sans-serif" font-size="22" font-weight="700" fill="#ffffff" letter-spacing="0.5">
+      Clear PET Bottle Flakes (Hot Caustic Washed)
+    </text>
+    <text x="40" y="76" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="13" font-weight="500" fill="#94a3b8">
+      Post-industrial clear rPET • Moisture <1% • PVC <30ppm • Jumbo bag baled
+    </text>
+    <!-- Verified Material Spec Stamp -->
+    <g transform="translate(620, 24)">
+      <rect width="140" height="36" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+      <text x="70" y="23" font-family="'Space Grotesk', system-ui, sans-serif" font-size="11" font-weight="700" fill="#38bdf8" text-anchor="middle" letter-spacing="1">
+        VERIFIED FEEDSTOCK
+      </text>
+    </g>
+  </g>
+</svg>

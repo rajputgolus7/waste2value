@@ -1,74 +1,92 @@
 /**
- * Deterministic Semantic Image Mapping for Waste2Market Materials (Server)
+ * STRICT CENTRALIZED MATERIAL IMAGE SYSTEM (SERVER)
  */
 
 const MATERIAL_IMAGE_MAP = {
-  // 1. TEXTILE FIBERS & GARMENT WASTE
-  cotton_yarn: 'https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&fit=crop&w=800&q=80',
-  cotton_linters: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80',
-  denim_scraps: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80',
+  // Agricultural & Biomass Materials
+  sugarcane_bagasse: '/images/materials/sugarcane_bagasse.svg',
+  rice_husk: '/images/materials/rice_husk.svg',
+  spent_barley: '/images/materials/spent_barley.svg',
+  wood_sawdust: '/images/materials/wood_sawdust.svg',
 
-  // 2. INDUSTRIAL OILS & SPENT CHEMICALS
-  hydraulic_oil: 'https://images.unsplash.com/photo-1618090584176-7132b9911661?auto=format&fit=crop&w=800&q=80',
-  lube_oil: 'https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80',
-  spent_chemicals: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=800&q=80',
-  phosphogypsum: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
+  // Textiles & Fibers
+  cotton_yarn: '/images/materials/cotton_yarn.svg',
+  cotton_linters: '/images/materials/cotton_linters.svg',
+  denim_clips: '/images/materials/denim_clips.svg',
 
-  // 3. BIOMASS & AGRO BY-PRODUCTS
-  rice_husk: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=800&q=80',
-  sugarcane_bagasse: 'https://images.unsplash.com/photo-1595974482597-4b8da8879bc5?auto=format&fit=crop&w=800&q=80',
-  spent_grain: 'https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=800&q=80',
-  sawdust_wood: 'https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80',
+  // Oils & Chemical Products
+  hydraulic_oil: '/images/materials/hydraulic_oil.svg',
+  hydrochloric_acid: '/images/materials/hydrochloric_acid.svg',
+  phosphogypsum: '/images/materials/phosphogypsum.svg',
 
-  // 4. FLY ASH & CONSTRUCTION WASTE
-  fly_ash: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=800&q=80',
-  construction_rubble: 'https://images.unsplash.com/photo-1590069261209-f8e9b8642343?auto=format&fit=crop&w=800&q=80',
+  // Metallurgical, Foundry & Slag
+  foundry_sand: '/images/materials/foundry_sand.svg',
+  aluminium_scrap: '/images/materials/aluminium_scrap.svg',
+  steel_scrap: '/images/materials/steel_scrap.svg',
+  copper_scrap: '/images/materials/copper_scrap.svg',
+  brass_scrap: '/images/materials/brass_scrap.svg',
+  zinc_dross: '/images/materials/zinc_dross.svg',
+  blast_furnace_slag: '/images/materials/blast_furnace_slag.svg',
 
-  // 5. METAL SCRAP & FOUNDRY SLAG
-  aluminium_scrap: 'https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80',
-  steel_scrap: 'https://images.unsplash.com/photo-1533073526757-2c8ca1df9f8c?auto=format&fit=crop&w=800&q=80',
-  foundry_sand: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
-  blast_furnace_slag: 'https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=800&q=80',
+  // Mineral & Construction
+  fly_ash: '/images/materials/fly_ash.svg',
+  construction_aggregate: '/images/materials/construction_aggregate.svg',
 
-  // 6. PLASTICS & POLYMERS SCRAP
-  pet_flakes: 'https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&w=800&q=80',
-  hdpe_regrind: 'https://images.unsplash.com/photo-1605600659908-0ef719419d41?auto=format&fit=crop&w=800&q=80',
-  rubber_crumb: 'https://images.unsplash.com/photo-1578844251758-2f71da64c96f?auto=format&fit=crop&w=800&q=80',
+  // Polymers & Rubber
+  pet_plastic: '/images/materials/pet_plastic.svg',
+  hdpe_plastic: '/images/materials/hdpe_plastic.svg',
+  rubber_crumb: '/images/materials/rubber_crumb.svg',
 
-  // 7. PAPER, PULP & PACKAGING
-  cardboard_occ: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80',
-  paper_cores: 'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=800&q=80',
+  // Paper & Packaging
+  cardboard_occ: '/images/materials/cardboard_occ.svg',
+  paper_cores: '/images/materials/paper_cores.svg',
 
-  // 8. GLASS & CERAMIC CULLET
-  glass_cullet: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80'
+  // Glass & Ceramics
+  glass_cullet: '/images/materials/glass_cullet.svg'
 };
 
-function getMaterialImageServer(title = '', categoryId = 1) {
-  const text = title.toLowerCase();
+function getMaterialImageServer(title = '', categoryId = 1, desc = '') {
+  const text = `${title} ${desc}`.toLowerCase().trim();
 
-  if (text.includes('cotton') || text.includes('textile') || text.includes('yarn') || text.includes('noils')) {
-    return MATERIAL_IMAGE_MAP.cotton_yarn;
-  }
-  if (text.includes('denim')) return MATERIAL_IMAGE_MAP.denim_scraps;
-  if (text.includes('oil') || text.includes('hydraulic') || text.includes('lubricant')) {
-    return MATERIAL_IMAGE_MAP.hydraulic_oil;
-  }
+  // 1. SPECIFIC MATERIAL MATCHES
   if (text.includes('bagasse') || text.includes('sugarcane')) return MATERIAL_IMAGE_MAP.sugarcane_bagasse;
-  if (text.includes('rice husk') || text.includes('paddy')) return MATERIAL_IMAGE_MAP.rice_husk;
-  if (text.includes('fly ash') || text.includes('ash')) return MATERIAL_IMAGE_MAP.fly_ash;
-  if (text.includes('aluminium') || text.includes('metal') || text.includes('steel') || text.includes('swarf')) {
-    return MATERIAL_IMAGE_MAP.aluminium_scrap;
-  }
-  if (text.includes('glass') || text.includes('cullet')) return MATERIAL_IMAGE_MAP.glass_cullet;
-  if (text.includes('pet') || text.includes('plastic') || text.includes('hdpe')) return MATERIAL_IMAGE_MAP.pet_flakes;
-  if (text.includes('rubber') || text.includes('tire')) return MATERIAL_IMAGE_MAP.rubber_crumb;
-  if (text.includes('cardboard') || text.includes('paper') || text.includes('corrugated')) return MATERIAL_IMAGE_MAP.cardboard_occ;
-  if (text.includes('brick') || text.includes('concrete') || text.includes('construction')) return MATERIAL_IMAGE_MAP.construction_rubble;
+  if (text.includes('rice husk') || text.includes('paddy husk') || (text.includes('rice') && text.includes('husk'))) return MATERIAL_IMAGE_MAP.rice_husk;
+  if (text.includes('cotton yarn') || text.includes('comber noils') || text.includes('ring waste') || (text.includes('yarn') && text.includes('waste'))) return MATERIAL_IMAGE_MAP.cotton_yarn;
+  if (text.includes('denim') || text.includes('indigo dyed')) return MATERIAL_IMAGE_MAP.denim_clips;
+  if (text.includes('linters') || text.includes('ginning')) return MATERIAL_IMAGE_MAP.cotton_linters;
+  if (text.includes('hydraulic oil') || text.includes('hydraulic fluid') || text.includes('lube oil') || text.includes('engine oil') || text.includes('lubricant')) return MATERIAL_IMAGE_MAP.hydraulic_oil;
+  if (text.includes('hydrochloric') || text.includes('pickling acid') || text.includes('acid')) return MATERIAL_IMAGE_MAP.hydrochloric_acid;
+  if (text.includes('phosphogypsum') || text.includes('gypsum')) return MATERIAL_IMAGE_MAP.phosphogypsum;
+  if (text.includes('foundry') || text.includes('green sand') || text.includes('silica sand') || text.includes('molding sand')) return MATERIAL_IMAGE_MAP.foundry_sand;
+  if (text.includes('aluminium') || text.includes('aluminum') || (text.includes('swarf') && text.includes('cnc'))) return MATERIAL_IMAGE_MAP.aluminium_scrap;
+  if (text.includes('copper')) return MATERIAL_IMAGE_MAP.copper_scrap;
+  if (text.includes('brass')) return MATERIAL_IMAGE_MAP.brass_scrap;
+  if (text.includes('steel') || text.includes('iron scrap') || text.includes('hms')) return MATERIAL_IMAGE_MAP.steel_scrap;
+  if (text.includes('zinc') || text.includes('dross') || text.includes('galvanizing')) return MATERIAL_IMAGE_MAP.zinc_dross;
+  if (text.includes('slag') || text.includes('blast furnace') || text.includes('ggbs')) return MATERIAL_IMAGE_MAP.blast_furnace_slag;
+  if (text.includes('fly ash') || text.includes('pozzolan') || (text.includes('ash') && text.includes('class'))) return MATERIAL_IMAGE_MAP.fly_ash;
+  if (text.includes('pet flakes') || text.includes('bottle scrap') || text.includes('rpet') || text.includes('pet')) return MATERIAL_IMAGE_MAP.pet_plastic;
+  if (text.includes('hdpe') || text.includes('drum regrind')) return MATERIAL_IMAGE_MAP.hdpe_plastic;
+  if (text.includes('cardboard') || text.includes('corrugated') || text.includes('occ')) return MATERIAL_IMAGE_MAP.cardboard_occ;
+  if (text.includes('core tubes') || text.includes('paper core') || (text.includes('tubes') && text.includes('paper'))) return MATERIAL_IMAGE_MAP.paper_cores;
+  if (text.includes('glass') || text.includes('cullet') || text.includes('soda-lime')) return MATERIAL_IMAGE_MAP.glass_cullet;
+  if (text.includes('rubber') || text.includes('tire') || text.includes('crumb')) return MATERIAL_IMAGE_MAP.rubber_crumb;
+  if (text.includes('brick') || text.includes('concrete') || text.includes('demolition') || text.includes('aggregate') || text.includes('masonry')) return MATERIAL_IMAGE_MAP.construction_aggregate;
+  if (text.includes('sawdust') || text.includes('wood') || text.includes('timber') || text.includes('pine')) return MATERIAL_IMAGE_MAP.wood_sawdust;
+  if (text.includes('spent grain') || text.includes('brewery') || text.includes('barley')) return MATERIAL_IMAGE_MAP.spent_barley;
+
+  // 2. BROAD CATEGORY LEVEL MATCHES
+  if (text.includes('textile') || text.includes('garment') || text.includes('fabric')) return MATERIAL_IMAGE_MAP.cotton_yarn;
+  if (text.includes('plastic') || text.includes('polymer')) return MATERIAL_IMAGE_MAP.pet_plastic;
+  if (text.includes('metal') || text.includes('scrap')) return MATERIAL_IMAGE_MAP.steel_scrap;
+  if (text.includes('paper')) return MATERIAL_IMAGE_MAP.cardboard_occ;
+  if (text.includes('oil') || text.includes('chemical')) return MATERIAL_IMAGE_MAP.hydraulic_oil;
+  if (text.includes('ash')) return MATERIAL_IMAGE_MAP.fly_ash;
 
   switch (Number(categoryId)) {
     case 1: return MATERIAL_IMAGE_MAP.rice_husk;
-    case 2: return MATERIAL_IMAGE_MAP.pet_flakes;
-    case 3: return MATERIAL_IMAGE_MAP.aluminium_scrap;
+    case 2: return MATERIAL_IMAGE_MAP.pet_plastic;
+    case 3: return MATERIAL_IMAGE_MAP.steel_scrap;
     case 4: return MATERIAL_IMAGE_MAP.cotton_yarn;
     case 5: return MATERIAL_IMAGE_MAP.fly_ash;
     case 6: return MATERIAL_IMAGE_MAP.hydraulic_oil;

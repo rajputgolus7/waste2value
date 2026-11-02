@@ -16,12 +16,12 @@ import {
 import { aiAPI } from '../services/api';
 
 const SAMPLE_CHIPS = [
-  { label: 'PET Plastic Scrap', key: 'pet_plastic', img: 'https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&w=400&q=80' },
-  { label: 'Paddy Rice Husk', key: 'rice_husk', img: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=400&q=80' },
-  { label: 'Dry Fly Ash Powder', key: 'fly_ash', img: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=400&q=80' },
-  { label: 'OCC Cardboard Waste', key: 'cardboard', img: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=400&q=80' },
-  { label: 'Used Hydraulic Oil', key: 'used_oil', img: 'https://images.unsplash.com/photo-1618090584176-7132b9911661?auto=format&fit=crop&w=400&q=80' },
-  { label: 'Cotton Spinning Waste', key: 'cotton_textile', img: 'https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&fit=crop&w=400&q=80' }
+  { label: 'PET Plastic Scrap', key: 'pet_plastic', img: '/images/materials/pet_plastic.svg' },
+  { label: 'Paddy Rice Husk', key: 'rice_husk', img: '/images/materials/rice_husk.svg' },
+  { label: 'Dry Fly Ash Powder', key: 'fly_ash', img: '/images/materials/fly_ash.svg' },
+  { label: 'OCC Cardboard Waste', key: 'cardboard', img: '/images/materials/cardboard_occ.svg' },
+  { label: 'Used Hydraulic Oil', key: 'used_oil', img: '/images/materials/hydraulic_oil.svg' },
+  { label: 'Cotton Spinning Waste', key: 'cotton_textile', img: '/images/materials/cotton_yarn.svg' }
 ];
 
 export const AIClassifierPage = () => {

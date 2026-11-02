@@ -48,6 +48,9 @@ app.get('/api/health', (req, res) => {
 // API Routes
 app.use('/api', apiRoutes);
 
+// Static assets (Material images fallback)
+app.use('/images', express.static(path.join(__dirname, '../../client/public/images')));
+
 // Global Error Handler
 app.use((err, req, res, next) => {
   console.error('Unhandled server error:', err);
