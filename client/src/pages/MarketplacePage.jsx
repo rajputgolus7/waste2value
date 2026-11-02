@@ -19,6 +19,7 @@ import {
 import { listingAPI } from '../services/api';
 import { StatusBadge } from '../components/StatusBadge';
 import { MakeOfferModal } from '../components/MakeOfferModal';
+import { getMaterialImage } from '../utils/materialImages';
 
 export const MarketplacePage = () => {
   const [listings, setListings] = useState([]);
@@ -313,9 +314,14 @@ export const MarketplacePage = () => {
                   <div>
                     <div className="relative h-44 bg-slate-100 overflow-hidden">
                       <img
-                        src={item.image_url}
+                        src={getMaterialImage(item)}
                         alt={item.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        loading="lazy"
+                        onError={(e) => {
+                          e.target.onerror = null;
+                          e.target.src = getMaterialImage({ category_id: item.category_id });
+                        }}
                       />
                       <div className="absolute top-3 left-3 flex items-center gap-1.5">
                         <span className="bg-charcoal-900/90 backdrop-blur-sm text-white text-[10px] font-bold px-2.5 py-1 rounded-md">

@@ -16,6 +16,7 @@ function seedDatabase() {
     DELETE FROM users;
     DELETE FROM companies;
     DELETE FROM categories;
+    DELETE FROM sqlite_sequence;
   `);
 
   console.log('✓ Cleared previous database records');
@@ -462,7 +463,7 @@ function seedDatabase() {
       city: 'Okhla',
       quality_grade: 'Grade A',
       availability_date: '2026-11-03',
-      image_url: 'https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&w=800&q=80',
+      image_url: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80',
       expected_use: 'Kraft paper pulping, testliner manufacturing, molded fiber packaging',
       status: 'ACTIVE'
     },
@@ -496,7 +497,7 @@ function seedDatabase() {
       city: 'Panipat',
       quality_grade: 'Grade A',
       availability_date: '2026-11-06',
-      image_url: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80',
+      image_url: 'https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&fit=crop&w=800&q=80',
       expected_use: 'Rotor open-end spinning (Ne 6s to 12s), surgical absorbent cotton, banknote paper',
       status: 'ACTIVE'
     },
@@ -513,7 +514,7 @@ function seedDatabase() {
       city: 'Bhiwadi',
       quality_grade: 'Industrial Reusable',
       availability_date: '2026-11-04',
-      image_url: 'https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=800&q=80',
+      image_url: 'https://images.unsplash.com/photo-1618090584176-7132b9911661?auto=format&fit=crop&w=800&q=80',
       expected_use: 'Lube oil re-refining into base oil, furnace burner fuel blending, chain lubricant',
       status: 'ACTIVE'
     },
@@ -530,7 +531,7 @@ function seedDatabase() {
       city: 'Muzaffarnagar',
       quality_grade: 'Grade B',
       availability_date: '2026-11-10',
-      image_url: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80',
+      image_url: 'https://images.unsplash.com/photo-1595974482597-4b8da8879bc5?auto=format&fit=crop&w=800&q=80',
       expected_use: 'Co-generation thermal boilers, particle board manufacturing, eco tableware molding',
       status: 'ACTIVE'
     },
@@ -581,7 +582,7 @@ function seedDatabase() {
       city: 'Panipat',
       quality_grade: 'Grade B',
       availability_date: '2026-11-09',
-      image_url: 'https://images.unsplash.com/photo-1582738411706-bfc8e691d1c2?auto=format&fit=crop&w=800&q=80',
+      image_url: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80',
       expected_use: 'Recycled denim yarn, thermal and acoustic insulation batts, handmade artisan paper',
       status: 'ACTIVE'
     },
@@ -632,7 +633,7 @@ function seedDatabase() {
       city: 'Jaipur',
       quality_grade: 'Grade A',
       availability_date: '2026-11-11',
-      image_url: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80',
+      image_url: 'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=800&q=80',
       expected_use: 'Re-use as winding cores, high yield packaging pulp, edge protectors',
       status: 'ACTIVE'
     },
@@ -717,7 +718,7 @@ function seedDatabase() {
       city: 'Bathinda',
       quality_grade: 'Grade B',
       availability_date: '2026-11-16',
-      image_url: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80',
+      image_url: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80',
       expected_use: 'Cellulose acetate, nitrocellulose, security bond paper, viscous rayon',
       status: 'ACTIVE'
     },
@@ -751,7 +752,7 @@ function seedDatabase() {
       city: 'Delhi',
       quality_grade: 'Grade A',
       availability_date: '2026-11-12',
-      image_url: 'https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=800&q=80',
+      image_url: 'https://images.unsplash.com/photo-1578844251758-2f71da64c96f?auto=format&fit=crop&w=800&q=80',
       expected_use: 'Crumb Rubber Modified Bitumen (CRMB) road surfacing, athletic running tracks, molded playground tiles',
       status: 'ACTIVE'
     },
@@ -768,7 +769,7 @@ function seedDatabase() {
       city: 'Bhiwadi',
       quality_grade: 'Grade A',
       availability_date: '2026-11-10',
-      image_url: 'https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80',
+      image_url: 'https://images.unsplash.com/photo-1516216628859-9bcceabb84ca?auto=format&fit=crop&w=800&q=80',
       expected_use: 'Zinc oxide (French process) chemical production, zinc sulphate fertilizer, secondary zinc smelting',
       status: 'ACTIVE'
     },
@@ -785,7 +786,7 @@ function seedDatabase() {
       city: 'Noida',
       quality_grade: 'Industrial Reusable',
       availability_date: '2026-11-05',
-      image_url: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=800&q=80',
+      image_url: 'https://images.unsplash.com/photo-1590069261209-f8e9b8642343?auto=format&fit=crop&w=800&q=80',
       expected_use: 'Sub-base road construction, drainage bedding, interlocking permeable pavers',
       status: 'ACTIVE'
     }

@@ -18,6 +18,7 @@ import { useAuth } from '../context/AuthContext';
 import { StatusBadge } from '../components/StatusBadge';
 import { DealTimeline } from '../components/DealTimeline';
 import { CounterOfferModal } from '../components/CounterOfferModal';
+import { getMaterialImage } from '../utils/materialImages';
 
 export const DealsPage = () => {
   const { user, isSeller, showToast } = useAuth();
@@ -154,9 +155,13 @@ export const DealsPage = () => {
                 <div className="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
                   <div className="flex items-start gap-4">
                     <img
-                      src={deal.listing_image || 'https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=400&q=80'}
+                      src={getMaterialImage({ title: deal.listing_title, image_url: deal.listing_image })}
                       alt={deal.listing_title}
                       className="w-16 h-16 rounded-xl object-cover border border-slate-200"
+                      onError={(e) => {
+                        e.target.onerror = null;
+                        e.target.src = getMaterialImage({ title: deal.listing_title });
+                      }}
                     />
                     <div>
                       <div className="flex items-center gap-2">

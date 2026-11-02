@@ -1,4 +1,5 @@
 const { get, run, query } = require('../db');
+const { getMaterialImageServer } = require('../utils/materialImages');
 
 /**
  * Get all categories
@@ -208,7 +209,7 @@ exports.createListing = (req, res) => {
     const randomSuffix = Math.floor(1000 + Math.random() * 9000);
     const uniqueCode = `W2M-2026-${randomSuffix}`;
 
-    const defaultImage = image_url || 'https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=800&q=80';
+    const defaultImage = image_url || getMaterialImageServer(title, category_id);
 
     const result = run(
       `INSERT INTO listings (

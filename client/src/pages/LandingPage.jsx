@@ -20,6 +20,7 @@ import {
 } from 'lucide-react';
 import { listingAPI, impactAPI } from '../services/api';
 import { StatusBadge } from '../components/StatusBadge';
+import { getMaterialImage } from '../utils/materialImages';
 
 export const LandingPage = () => {
   const [featuredListings, setFeaturedListings] = useState([]);
@@ -242,9 +243,14 @@ export const LandingPage = () => {
             >
               <div className="relative h-44 bg-slate-100 overflow-hidden">
                 <img
-                  src={item.image_url}
+                  src={getMaterialImage(item)}
                   alt={item.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src = getMaterialImage({ category_id: item.category_id });
+                  }}
                 />
                 <div className="absolute top-3 left-3">
                   <span className="bg-charcoal-900/90 backdrop-blur-sm text-white text-[10px] font-bold px-2.5 py-1 rounded-md">

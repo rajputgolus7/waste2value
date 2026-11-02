@@ -21,6 +21,7 @@ import { StatusBadge } from '../components/StatusBadge';
 import { MakeOfferModal } from '../components/MakeOfferModal';
 import { MatchScoreCard } from '../components/MatchScoreCard';
 import { useAuth } from '../context/AuthContext';
+import { getMaterialImage } from '../utils/materialImages';
 
 export const ListingDetailPage = () => {
   const { id } = useParams();
@@ -116,9 +117,13 @@ export const ListingDetailPage = () => {
           <div className="bg-white rounded-3xl border border-slate-200/90 overflow-hidden shadow-sm">
             <div className="relative h-80 sm:h-96 bg-slate-100">
               <img
-                src={listing.image_url}
+                src={getMaterialImage(listing)}
                 alt={listing.title}
                 className="w-full h-full object-cover"
+                onError={(e) => {
+                  e.target.onerror = null;
+                  e.target.src = getMaterialImage({ category_id: listing.category_id });
+                }}
               />
               <div className="absolute top-4 left-4 flex gap-2">
                 <span className="bg-charcoal-900/90 backdrop-blur-md text-white text-xs font-bold px-3 py-1.5 rounded-lg shadow">

@@ -21,9 +21,11 @@ const SAMPLE_IMAGES = [
   { name: 'Rice Husk Bales', url: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=800&q=80' },
   { name: 'PET Plastic Scraps', url: 'https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&w=800&q=80' },
   { name: 'Fly Ash Powder', url: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=800&q=80' },
-  { name: 'Cotton Mill Clips', url: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80' },
-  { name: 'Hydraulic Lube Oil', url: 'https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=800&q=80' },
-  { name: 'Foundry Slag Sand', url: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80' }
+  { name: 'Cotton Yarn & Textile Waste', url: 'https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&fit=crop&w=800&q=80' },
+  { name: 'Hydraulic Lube Oil Drums', url: 'https://images.unsplash.com/photo-1618090584176-7132b9911661?auto=format&fit=crop&w=800&q=80' },
+  { name: 'Metal Scrap & Swarf', url: 'https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80' },
+  { name: 'Sugarcane Bagasse Bales', url: 'https://images.unsplash.com/photo-1595974482597-4b8da8879bc5?auto=format&fit=crop&w=800&q=80' },
+  { name: 'Corrugated Cardboard OCC', url: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80' }
 ];
 
 export const CreateListingPage = () => {
